@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            color: blue;
+            background-color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifb;
+            text-align: center;
+        }
+        fieldset{
+            color: rgb(22, 22, 22);
+        }
+        body{background-color: pink;
+            padding: 20px;
+            border: 10px solid brown;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        } */
+        * {
+          box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+            margin: 10px 150px;
+           
+        }
+        .container{
+
+            background-color: pink;
+            padding: 40px;
+            border: 10px solid brown;
+            border-radius: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        h1{text-align: center;
+            
+        }
+        input[type="submit"]{
+            background-color: rgb(7, 110, 50);
+            padding: 10px 70px;
+            border: none;
+            color: orange;
+        
+        }
+        #card_type{
+            background-color: orange;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class= "container">
+    <form action="">
+        <h1>PAYMENT FORM</h1>
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name"required placeholder="Gopal Garg"> </p>
+        <fieldset>
+            <legend>Gender</legend> 
+        <p>
+            Male <input type="radio" name="gender" id="Male">
+            Female <input type="radio" name="gender" id="Male">
+        </p>
+    </fieldset>
+    <p>Address- <textarea name="address" id="address" cols="80" rows="10" placeholder="Enter your Address-"></textarea>
+    <p>Email- <input type="email" name="email" id="email" placeholder="abc@gmail.com"></p>
+    <p>Pin Code- <input type="password" name="password" id="password" placeholder="******"></P>
+        <hr>
+        <h2>PAYMENT INFORMATION</h2>
+
+    <p>Card type-
+        <select name="card type" id="card_type" >
+           <option value="">--select an option--</option>
+           <option value="master">master</option>
+           <option value="visa">visa</option>
+           <option value="rupay">rupay</option>        
+        ></select>
+    </p>
+    
+    <p>Card no.-<input type="number" name="card number" id="card number" placeholder="1111-2222-3333"> </p>
+    <p>Expiry date- <input type="date" name="expiry date" id="expiry date"> </p>
+    <p>cvv- <input type="password" name="cvv" id="cvv" placeholder="***"> </p>
+    <input type="submit" value="Pay Now"></input>
+    </form>
+    </div>
+
+</body> 
+<script>
+    // var num = 1;
+    // var run= 2;
+    // console.log(num+run);
+
+    // var marks = {
+    //     gopu:21,dada:23,sorry:23
+    // }
+    // console.log(marks); 
+    // var pot = "hello my name is dad my";
+    // console.log(pot.indexOf("my"));
+    // console.log(pot.lastIndexOf("my"));
+    let myDate = new Date();
+    console.log(myDate);
+</script>
+</html>
